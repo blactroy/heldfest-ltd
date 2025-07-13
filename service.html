@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | HELDFEST GEOMANTICS LTD</title>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>HELDFEST GEOMANTICS</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section data-aos="fade-up" class="service-preview">
+            <div>
+                <h1>Our Services</h1>
+                <p>We offer a comprehensive range of geomatic and geospatial services tailored to support modern infrastructure, land management, and environmental projects.</p>
+                <div class="service-cards">
+                    <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                        <h3>Land Surveying</h3>
+                        <p>Boundary marking, topographic mapping, cadastral surveys, and construction layout for accurate land development and planning.</p>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                        <h3>Remote Sensing</h3>
+                        <p>Acquisition and analysis of satellite and drone imagery for environmental monitoring, resource management, and spatial planning.</p>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                        <h3>Mapping & GIS</h3>
+                        <p>Creation of precise geospatial maps, GIS database design, and spatial data analysis to empower decision-making and project execution.</p>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                        <h3>Geospatial Consulting</h3>
+                        <p>Strategic guidance for implementing GIS systems, spatial data management, and custom geospatial solutions for diverse industries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

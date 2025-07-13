@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELDFEST GEOMANTICS LTD</title>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>HELDFEST GEOMANTICS</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <header data-aos="fade-down">
+        <div class="hero hero-bg">
+            <h2>HELDFEST GEOMANTICS LTD</h2>
+            <p class="tag-line">Prudent Geospatial Solution</p>
+        </div>
+    </header>
+    <main>
+        <section class="about" data-aos="fade-up">
+            <h3>About Us</h3>
+            <p>
+                HELDFEST GEOMANTICS LTD delivers innovative geospatial solutions for land surveying, mapping, and remote sensing. Our expert team combines advanced technology and industry experience to support infrastructure, environmental, and spatial analysis projects. We are committed to accuracy, integrity, and client satisfaction in every engagement.
+            </p>
+            <div class="learn-more">
+                <a href="about.html" class="about-btn">Learn More</a>
+            </div>
+        </section>
+        <section class="service-preview" data-aos="fade-up">
+            <h3>Services</h3>
+            <div class="service-cards">
+                <article class="service-card">
+                    <h4>Land Survey</h4>
+                    <p>Precision ground measurements for planning and development.</p>
+                </article>
+                <article class="service-card">
+                    <h4>Remote Sensing</h4>
+                    <p>Data capture from aerial and satellite systems for spatial analysis.</p>
+                </article>
+                <article class="service-card">
+                    <h4>Mapping</h4>
+                    <p>Creating accurate maps to support infrastructure and land use.</p>
+                </article>
+            </div>
+            <div class="explore">
+                <a href="service.html">Explore</a>
+            </div>
+        </section>
+    </main>
+   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | HELDFEST GEOMANTICS LTD</title>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>HELDFEST GEOMANTICS</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="about-intro" data-aos="fade-up">
+            <div class="about-intro-container">
+                <h1>Who We Are</h1>
+                <p>
+                    HELDFEST GEOMANTICS LTD is a leading Kenyan geospatial and surveying company, providing innovative and reliable services in land surveying, mapping, GIS, and quantity surveying. We serve both public and private sector clients, delivering solutions that drive smarter development and informed decision-making.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-highlights" data-aos="fade-up">
+            <div class="about-highlights-container">
+                <div class="about-card">
+                    <h2>Our Vision</h2>
+                    <p>
+                        To be the region’s most trusted provider of advanced geospatial and surveying solutions, shaping sustainable growth and development.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <h2>Our Mission</h2>
+                    <p>
+                        We empower our clients with accurate data, innovative technology, and expert support for every project—delivered with integrity, precision, and a commitment to excellence.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <h2>Our Values</h2>
+                    <ul>
+                        <li>Precision</li>
+                        <li>Transparency</li>
+                        <li>Responsibility</li>
+                        <li>Client-first approach</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-details" data-aos="fade-up">
+            <div>
+                <h2>About Us</h2>
+                <p>
+                    At HELDFEST GEOMANTICS LTD, we combine deep industry knowledge with the latest technology to deliver tailored geospatial solutions. Our experienced team supports infrastructure development, environmental management, and spatial analysis projects across Kenya and beyond.
+                </p>
+                <p>
+                    We are committed to accuracy, integrity, and client satisfaction. Whether you need detailed land surveys, high-quality mapping, or expert geospatial consulting, we are your trusted partner for reliable results.
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
